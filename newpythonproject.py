@@ -9,50 +9,43 @@
 #__date__ = "$2020-04-03 15:53:49$"
 #
 #if __name__ == "__main__":
-#    print "Hello Wogshdhdhdgsfrld"
-#
-#print ("ile masz lat   :")
-#age = int(input())
-#
-#if ( age < 34):
-#    print("Jesteś bobasen")
-#elif(age <45 ):
-#     print("Jesteś dzieckiem") 
-#elif(age <49):
-#     print("Jesteś mały")
-#elif(age>= 120):
-#     print("Nazywasz sie młodzież")
-#elif(age >=129):
-#    print("jestes mlodzieniaszkiem")
-#else:
-#    print("jestes stary i leciwy")
+#    print "Hello Word"
+zadanie 1
+--------------------------------------
+for user in range (0,3):
+    name = raw_input("jak massz na imie")
+print("Czesc",name)
+    
+zadanie 2
+--------------------------------------
+counter = 0
+while counter !=3:
+    name = raw_input(str(counter)+"Jak masz na imie:   ")
+    print("czesc",name)
+counter +=1
 
-#for user in range (0,3):
-#    name = raw_input("jak massz na imie")
-#    print("Czesc",name)
-#    
 
-#counter = 0
-#while counter !=3:
-#    name = raw_input(str(counter)+"Jak masz na imie:   ")
-#    print("czesc",name)
-#    counter +=1
-#a=5
-#a= int(raw_input("wpisz liczbe wieksza od 4   "))
-#while (a>4):
-#   
-#    print("liczba wieksza od cztery to",a)
-#    print("podana liczba a nie jest wieksza od 4")
-#    break
+zadanie 3
+--------------------------------------
+a=5
+a= int(raw_input("wpisz liczbe wieksza od 4   "))
+while (a>4):
+   
+    print("liczba wieksza od cztery to",a)
+    print("podana liczba a nie jest wieksza od 4")
+    break
+      
+zadanie 4
+---------------------------------------
 
-#
-#book = 59
-#while book > 30:
-#    print("Czekam na przecene")
-#    book = book * 0.8
-#    print("Przecena 20%, aktualna cena: ", round(book, 2), "zl")
-#    print("— — — — — — — — — — — — — — — — — —")
-#print("\nIdę do księgarni!") 
+
+book = 59
+while book > 30:
+  print("Czekam na przecene")
+  book = book * 0.8
+  print("Przecena 20%, aktualna cena: ", round(book, 2), "zl")
+  print("— — — — — — — — — — — — — — — — — —")
+  print("\nIdę do księgarni!") 
 
 #gold = 220
 #while gold <300:
