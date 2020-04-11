@@ -455,26 +455,34 @@ print("suma wynikow to:" , podsumowanie)
 zadanie 27
 ------------------------------------------------------------------------
 
-#R = [["CA","NV","UT"],["NJ","NY","DE"]]
-#for a in R:
-#     for b in a:
-#        print(b)
+R = [["CA","NV","UT"],["NJ","NY","DE"]]
+for a in R:
+     for b in a:
+        print(b)
+        
+zadanie 28
+----------------------------------------------------------------------------------
 
-#suma_liczb = 0
-#for a in range(5):
-#        nowa_wartosc = int(raw_input("Wprowadz dowolna liczbę od 1 do 10:  "))
-#        if nowa_wartosc == 5:
-#            suma_liczb = suma_liczb +1
-#        
-#print("Uzytkownik wybral",suma_liczb,"razy liczbe 5.")
-#
-#lista = 0
-#
-#for a in range(0,4,1):
-#    nowa_wartosc=int(raw_input("wprowadz liczbe od 1 do 10:  "))
-#    if nowa_wartosc==4 and nowa_wartosc==3:
-#        lista = lista +1
-#print("uzytkownik wybral", lista)
+suma_liczb = 0
+for a in range(5):
+        nowa_wartosc = int(raw_input("Wprowadz dowolna liczbę od 1 do 10:  "))
+        if nowa_wartosc == 5:
+            suma_liczb = suma_liczb +1
+            
+
+print("Uzytkownik wybral",suma_liczb,"razy liczbe 5.")
+
+zadanie 29
+------------------------------------------------------------------------------
+
+
+lista = 0
+
+for a in range(0,4,1):
+    nowa_wartosc=int(raw_input("wprowadz liczbe od 1 do 10:  "))
+    if nowa_wartosc==4 and nowa_wartosc==3:
+        lista = lista +1
+print("uzytkownik wybral", lista)
 
 
 for a in range(0,10,1):
