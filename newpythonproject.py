@@ -47,133 +47,123 @@ while book > 30:
   print("— — — — — — — — — — — — — — — — — —")
   print("\nIdę do księgarni!") 
 
-#gold = 220
-#while gold <300:
-#    gold = gold*1.02
-#    print("Wzrost 10%, aktualna cena to:",round(gold,4))
+zadanie 5
+------------------------------------------------
 
-#while 1:
-#    print(bool(1))
+num = 10
+while num <20:
+    num +=1
+    if num ==15:
+        continue
+    print("aktualny numer to ",num)
+print("jestem poza petla")    
 
-#num = 10
-#while num <20:
-#    num +=1
-#    if num ==15:
-#        continue
-#    print("aktualny numer to ",num)
-#print("jestem poza petla")    
+zadanie 6
+--------------------------------------------------------
 
-#i =0
-#j= 0
-#while i <=10:
-#    i +=1
-#    while j <=10:
-#        j = j+i
-#        print(j)
+import random
 
-#import random
-#
-#b = random.randint(0,4)
-#
-#while True:
-#a = int(raw_input("podaj liczbe od 1-2      "))    
-#    if a==b:
-#        print("podales prawidlowa liczbe")
-#    else:
-#        print("pomyliles sie")
+b = random.randint(0,4)
+
+while True:
+a = int(raw_input("podaj liczbe od 1-2      "))    
+    if a==b:
+        print("podales prawidlowa liczbe")
+    else:
+        print("pomyliles sie")
 
 
-
+zadanie 7
+------------------------------------------------------
 
    
-#a=1
-#b=2
-#
-#podanaliczba=int(input('podaj liczbe'))-1  #zrobiłem tak żeby liczba pasowała do obliczeń w bloku pętli
-#d=podanaliczba+1
-#print(d)
-#
-#for c in range(0,podanaliczba):
-#     a=a*b
-#     b=b+1
-#     while b==d:
-#        print('silnia liczby',d,'to',a*b)
-#        break
+a=1
+b=2
+
+podanaliczba=int(input('podaj liczbe'))-1  
+d=podanaliczba+1
+print(d)
+
+for c in range(0,podanaliczba):
+     a=a*b
+     b=b+1
+     while b==d:
+        print('silnia liczby',d,'to',a*b)
+        break
+
+zadanie 8
+-------------------------------------------------------------------
+
+for r in range(0,2):
+        print(r)
+        
+        z = str(raw_input("Zgadnij co to za slowo ?    :"+ zagadka))
+        while True:
+                if z==r:
+                    print("brawo Ty - odgadles haslo")
+                    break
+                else:
+                    print("sprobuj jeszcze raz")
+                    break
+                    
+zadanie 9
+--------------------------------------------------------------------------
+import random
+lista = ["szklanka", "wafle", "serek", "woda", "zegarek", "zeszyt", "tabletki", "myszka", "olowke", "talerz"]
+
+losujemy dowolna liczba (random.randrange) z przedzialu od 0 do ilosci wyrazow (len(lista))
+liczba = random.randrange(len(lista))
 
 
-#import random
-#myList = ["pies", "telewizor", "chycka", "klatka", "kanapa", "tygrys", "sufit"]
-#r=(random.choice(myList))
-#zagadka = ''.join(random.sample(myList, len(myList)))
-#
-#
-#
-#for r in range(0,2):
-#        print(r)
-#        
-#        z = str(raw_input("Zgadnij co to za slowo ?    :"+ zagadka))
-#        while True:
-#                if z==r:
-#                    print("brawo Ty - odgadles haslo")
-#                    break
-#                else:
-#                    print("sprobuj jeszcze raz")
-#                    break
+los = lista[liczba]
 
-#import random
-#lista = ["szklanka", "wafle", "serek", "woda", "zegarek", "zeszyt", "tabletki", "myszka", "olowke", "talerz"]
-#
-##losujemy dowolna liczba (random.randrange) z przedzialu od 0 do ilosci wyrazow (len(lista))
-#liczba = random.randrange(len(lista))
-#
-##los to nasze slowo z listy
-#los = lista[liczba]
-#
-##nadajemy losowi wartość listy - podzieli nam każda literkę na osobna wartość listy
-#los = list(los)
-#
-##mieszamy słowo: za pomocą ''.join ('' - czym będzie oddzielona nasza połączona lista) zmiennej "zagadka" nadajemy nowy wyraz, gdzie random.sample(populacja, k)
-##Zwraca listę długości k unikalnych elementów wybranych z sekwencji populacji lub zestawu. Służy do losowego próbkowania bez zamiany.
-#zagadka = ''.join(random.sample(los, len(los)))
-#
-#print("Uloz z podanych liter slowo: ", zagadka)
-#slowo = str(raw_input("Podaj odpowiedz: "))
-#while slowo not in lista:
-#    print("Zla odpowiedz!")
-#    print("Uloz z podanych liter slowo: ", zagadka)
-#    slowo = str(raw_input("Sprobuj jeszcze raz: "))
-#    if slowo == "q" or "Q":
-#        print("Zakonczyles petle.")
-#    else:
-#        print("Zgadles, odpowiedz to: ", slowo)
 
-#zolwie = str(raw_input("czy lubie zolwie: odpowiedz TAK lub NIE      :"))
-#p1 = "TAK"
-#
-#if zolwie==p1 :
-#        print("poprawna odpowiedz")
-#else:
-#        print("nie poprawna odpowwiedz")
-#
-#urodziny = str(raw_input("za ile dni mam urodziny    :" ))  
-#p2=6
-#if urodziny==6:
-#             print("poprawna odpowiedz")
-#else:
-#                print("Próbuj dalej ")
-#mettalica = str(raw_input("Czy sluchalem w mlodosci mettaliki??  odpowiedz TAK lub NIE      :"))
-#p3= "TAK"            
-#if mettalica ==p3:
-#                    print("dobrze")
-#else:
-#                    print("za malo mnie  znasz :)")
-#zielony = str(raw_input("MOj ulubiony kolor zaczyna sie na litere ?"))
-#p4 = "z"
-#
-#if zielony ==p4:
-#                            print("dobrze")
-#else:
-#                            print("zle")
+los = list(los)
+
+
+print("Uloz z podanych liter slowo: ", zagadka)
+slowo = str(raw_input("Podaj odpowiedz: "))
+while slowo not in lista:
+    print("Zla odpowiedz!")
+    print("Uloz z podanych liter slowo: ", zagadka)
+    slowo = str(raw_input("Sprobuj jeszcze raz: "))
+    if slowo == "q" or "Q":
+        print("Zakonczyles petle.")
+    else:
+        print("Zgadles, odpowiedz to: ", slowo)
+
+zolwie = str(raw_input("czy lubie zolwie: odpowiedz TAK lub NIE      :"))
+p1 = "TAK"
+
+if zolwie==p1 :
+        print("poprawna odpowiedz")
+else:
+        print("nie poprawna odpowwiedz")
+
+urodziny = str(raw_input("za ile dni mam urodziny    :" ))  
+p2=6
+if urodziny==6:
+             print("poprawna odpowiedz")
+else:
+                print("Próbuj dalej ")
+mettalica = str(raw_input("Czy sluchalem w mlodosci mettaliki??  odpowiedz TAK lub NIE      :"))
+p3= "TAK"            
+if mettalica ==p3:
+                    print("dobrze")
+else:
+                    print("za malo mnie  znasz :)")
+zielony = str(raw_input("MOj ulubiony kolor zaczyna sie na litere ?"))
+p4 = "z"
+
+if zielony ==p4:
+                            print("dobrze")
+else:
+                            print("zle")
+
+        
+zadanie 10
+--------------------------------------------------------------------------------
+
 
 #op = "t"
 #while op == "t":
