@@ -1,0 +1,7 @@
+num = 10
+while num <20:
+   num +=1
+    if num ==15:
+        continue
+    print("aktualny numer to ",num)
+print("jestem poza petla")    
