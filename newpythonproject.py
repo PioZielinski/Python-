@@ -165,257 +165,295 @@ zadanie 10
 --------------------------------------------------------------------------------
 
 
-#op = "t"
-#while op == "t":
-#    a, b, c = str(raw_input("Podaj trzy liczby oddzielone spacjami: ")).split(" ")
-#
-#    print("Wprowadzono liczby:", a, b, c)
-#    print("\nNajmniejsza:")
-#
-#    if a < b:
-#        if a < c:
-#            najmniejsza = a
-#        else:
-#            najmniejsza = c
-#    elif b < c:
-#        najmniejsza = b
-#    else:
-#        najmniejsza = c
-#
-#    print(najmniejsza)
-#
-#    op = str(raw_input("Jeszcze raz (t/n)? "))
-#
-#print("Koniec.")
+op = "t"
+while op == "t":
+    a, b, c = str(raw_input("Podaj trzy liczby oddzielone spacjami: ")).split(" ")
 
-#
-#def pogoda():
-#    print("fsds")
-#    print("fsdf")
-#    
-#pogoda()  
-#
-#def przedstawsie(imie,wiek):  
-#    print("mam na imie" + imie)
-#    print("mam" +wiek)
-#    
-#przedstawsie("   piotr  "," 33 lata")
-#przedstawsie("  rysiu ", " 22 lata  ")
+    print("Wprowadzono liczby:", a, b, c)
+    print("\nNajmniejsza:")
 
-#def dziennik(klasa,**kwargs):
-#    print('klasa' + klasa)
-#    for nazwisko in kwargs.keys():
-#      print(nazwisko)
-#    print(kwargs.get('Kowalski'))  
-#        
-#dziennik('3c',kowalski='1',nowak='2')        
+    if a < b:
+        if a < c:
+            najmniejsza = a
+        else:
+            najmniejsza = c
+    elif b < c:
+        najmniejsza = b
+    else:
+        najmniejsza = c
+    print(najmniejsza)
 
-#def dodawanie(pierwsza,druga):
-#     return(pierwsza+druga)
-#
-#pierwsza_suma=dodawanie(2,2)
-#druga_suma=dodawanie(1,1)
-#print(dodawanie(2,2)+dodawanie(1,1))
-#
-#def odejmowanie(a,b):
-#    print(a-b)
-#
-#roznica = odejmowanie(3,2)
-#print(roznica)
+    op = str(raw_input("Jeszcze raz (t/n)? "))
 
-#imie = 'alaa'
-#nazwisko= "kowalski 'nowak'"
-#adres = '''kwiatowa 28c/1
+print("Koniec.")
+
+zadanie 11
+-----------------------------------------------------------------------------
+
+
+def przedstawsie(imie,wiek):  
+    print("mam na imie" + imie)
+    print("mam" +wiek)
+    
+przedstawsie("   piotr  "," 33 lata")
+przedstawsie("  rysiu ", " 22 lata  ")
+
+
+zadanie 12
+----------------------------------------------------------------------------------
+
+def dziennik(klasa,**kwargs):
+    print('klasa' + klasa)
+    for nazwisko in kwargs.keys():
+      print(nazwisko)
+    print(kwargs.get('Kowalski'))  
+        
+dziennik('3c',kowalski='1',nowak='2')       
+
+zadanie 13
+-----------------------------------------------------------------------------------
+
+def dodawanie(pierwsza,druga):
+     return(pierwsza+druga)
+
+pierwsza_suma=dodawanie(2,2)
+druga_suma=dodawanie(1,1)
+print(dodawanie(2,2)+dodawanie(1,1))
+
+def odejmowanie(a,b):
+    print(a-b)
+
+roznica = odejmowanie(3,2)
+print(roznica)
+
+zadanie 14
+------------------------------------------------------------------------------
+
+imie = 'alaa'
+nazwisko= "kowalski nowak"
+adres = "kwiatowa 28c/1"
             
-#print(nazwisko)
-#print("male liter".upper())
-#print(nazwisko.isupper())
-#
-#for char in 'alaa':
-#    print(char)
-#    
-#print(imie[0])
-#print(imie[0:3])
-#print(imie.index("a"))
-#print("ala" not in "ala ma kota")
-#
-#print("ok".join([ " ala ", " ma " , " kota " ]))
-#print("ma nazwisko ".join(["piotr ","zielinski"]))
-#print("ala,ma,kota,i,psa").split("!")
-#print(imie.startswith("Ba"))
-#
-#imiona = ["kasia","bartek","andrzej",1,2,3,45]
-#print(imiona[0])
-#print(imiona[6])
-#print(imiona[0:4])
-#print(imiona.index("kasia"))
-#
-#imiona.append("wojtek")
-#imiona.insert(1,"grzegorz")
-#print(len(imiona))
-#
-#print(imiona)
-#del(imiona[0])
-#print(imiona)
-#
-#pierwsz_lista = ["lampa","koc"]
-#druga_lista=["auto","pociag"]
-#print(pierwsz_lista+druga_lista)
-#print(pierwsz_lista*3)
+print(nazwisko)
+print("male litery".upper())
+print(nazwisko.isupper())
 
-#nazwiska=["zielinski","adamiak","kurnicka"]
-#posortowane= sorted(nazwiska,reverse=False)
-#print(nazwiska)
-#print(posortowane)
+for char in 'alaa':
+    print(char)
+    
+print(imie[0])
+print(imie[0:3])
+print(imie.index("a"))
+print("ala" not in "ala ma kota")
 
-#JEZYKI_programowania=("js","php")
-#print(JEZYKI_programowania[1])
-#print(type(JEZYKI_programowania))
+print("ok".join([ " ala ", " ma " , " kota " ]))
+print("ma nazwisko ".join(["piotr ","zielinski"]))
+print("ala,ma,kota,i,psa").split("!")
+print(imie.startswith("Ba"))
 
-#pierwszy_zbior = str("warszawa","krakiw","lodz")
-#drugi_zbior = str("poznan","warszawa")
-#
-#print(pierwszy_zbior)
-#print(drugi_zbior)
-#
-#print(pierwszy_zbior | drugi_zbior)
+imiona = ["kasia","bartek","andrzej",1,2,3,45]
+print(imiona[0])
+print(imiona[6])
+print(imiona[0:4])
+print(imiona.index("kasia"))
 
+imiona.append("wojtek")
+imiona.insert(1,"grzegorz")
+print(len(imiona))
 
-#dziennik = {1:"kowalski",2:"nowak",3:"lewandowski",4:"kosinski"}
-#print(dziennik)
-#
-#dziennik[5]="mucha"
-#print(dziennik[5])
-#
-#for key in dziennik.keys():
-#    print(key)
-#    
-#for value in dziennik.values():
-#    print(value)
-#    
-#del dziennik[3]
-#
-#print("------------------------------")
-#
-#for key in dziennik.keys():
-#    print(key)
-#    
-#print("-------------------------")
-#
-#for value in dziennik.values():
-#    print(value)
-#
-#dziennik[2] ="nowy uczen"
-#print("nowy uczen to " + dziennik[2])
+print(imiona)
+del(imiona[0])
+print(imiona)
 
-#for x in range(0,5,1):
-#    print(x)
+zadanie 15
+------------------------------------------------------------------------
 
+pierwsz_lista = ["lampa","koc"]
+druga_lista=["auto","pociag"]
+print(pierwsz_lista+druga_lista)
+print(pierwsz_lista*3)
 
+nazwiska=["zielinski","adamiak","kurnicka"]
+posortowane= sorted(nazwiska,reverse=False)
+print(nazwiska)
+print(posortowane)
 
-#def funkcja(a,d,f):
-#    a-=2
-#    for a in range(a,d,f):
-#        a+=f
-#        print(a)
-#        
-#funkcja(6,12,2)        
+zadanie 16
+------------------------------------------------------------------------------
+
+dziennik = {1:"kowalski",2:"nowak",3:"lewandowski",4:"kosinski"}
+print(dziennik)
+
+dziennik[5]="mucha"
+print(dziennik[5])
+
+for key in dziennik.keys():
+    print(key)
+    
+for value in dziennik.values():
+    print(value)
+    
+del dziennik[3]
+
+print("------------------------------")
+
+for key in dziennik.keys():
+    print(key)
+    
+print("-------------------------")
+
+for value in dziennik.values():
+    print(value)
+
+dziennik[2] ="nowy uczen"
+print("nowy uczen to " + dziennik[2])
+
+for x in range(0,5,1):
+    print(x)
+
+zadanie 17
+---------------------------------------------------------------------------
+
+def funkcja(a,d,f):
+    a-=2
+    for a in range(a,d,f):
+        a+=f
+        print(a)
+        
+funkcja(6,12,2)        
     
 
 
-#def maximum(x,y):
-#    if x>y:
-#        return x
-#    else:
-#        return y
-#print maximum(646,4141461)
+def maximum(x,y):
+    if x>y:
+        return x
+    else:
+        return y
+print maximum(646,4141461)
 
+zadanie 18
+------------------------------------------------------------------------------
 
+for a in range(1,8,1):
+    if a==5:
+        print("Znalazlem 5!")
+    else:
+        print(a)
 
-#for a in range(1,8,1):
-#    if a==5:
-#        print("Znalazlem 5!")
-#    else:
-#        print(a)
+zadanie 19
+---------------------------------------------------------
 
-#a=[1,2,3]
-#for x in (a):
-#    for y in 'abc':
-#         print(x,y)
+a=[1,2,3]
+for x in (a):
+    for y in 'abc':
+         print(x,y)
+zadanie 19
+
+---------------------------------------------------------
       
-#lista = ["AA","BBB","CCCC","DDDDD"]
-#for a in lista:
-#   print(a)
-#else:
-#   print("lista sie skonczyla")
+lista = ["AA","BBB","CCCC","DDDDD"]
+for a in lista:
+   print(a)
+else:
+   print("lista sie skonczyla")
+
+zadanie 19
+---------------------------------------------------
+
+for z in range(1,21,1):
+    if z % 3==0:
+      print(z)
+    else:
+     print('')
     
-#for z in range(1,21,1):
-#    if z % 3==0:
-#      print(z)
-#    else:
-#     print('')
+ zadanie 20
+-------------------------------------------------------------
 
-#x=4
-#while(x <9):
-#    print(x)
-#    x = x+1
-#
-#
-#
-#def ciag(x,y):
-#    while(x <y):
-#        print(x)
-#        x = x+1
-#
-#ciag(1,15) 
+x=4
+while(x <9):
+    print(x)
+    x = x+1
 
-#def gg(a,b):
-#    while a<=b:
-#        print(a)
-#        a+=1
-#    else:
-#        ("start")
-#gg(12,23)
-#
-#
-#lista1 = ["KKKK", "GGGG", "HHHH"]
-#lista2 = ["563-12", "363-AB"]
-#
-#for z in lista1:
-#    for b in lista2:
-#        print(z + " " + b)
-#    print("---------")    
+ zadanie 21
+--------------------------------------------------------------
 
-#a = (raw_input("Prosze o napisanie litery n lub c "))
-#if a=="n" or a=="c":
-#    print("Dziekuje")
-#else:
-#    print("wpisales niepoprawna litere")
+
+def ciag(x,y):
+    while(x <y):
+        print(x)
+        x = x+1
+
+ciag(1,15) 
+
+zadanie 22
+--------------------------------------------------------------
+
+def gg(a,b):
+    while a<=b:
+        print(a)
+        a+=1
+    else:
+        ("start")
+gg(12,23)
+
+zadanie 23
+----------------------------------------------------------------
+
+
+lista1 = ["KKKK", "GGGG", "HHHH"]
+lista2 = ["563-12", "363-AB"]
+
+for z in lista1:
+    for b in lista2:
+        print(z + " " + b)
+    print("---------")    
+
     
-#a = [17,21,18]
-#b = "kolejna zmienna"
-#d="AAA"
-#
-#for c in a:
-#    print(c)
-#    print(b)
-#    print(d)
+zadanie 24
+--------------------------------------------------------------------
+    
+a = (raw_input("Prosze o napisanie litery n lub c "))
+if a=="n" or a=="c":
+    print("Dziekuje")
+else:
+print("wpisales niepoprawna litere")
 
-#a=[17,21,18]
-#b=["Adrian","Paula"]
-#
-#for i in a:
-#    print(i)
-#    for j in b:
-#        print(j)
 
-#podsumowanie = 1
-#for a in range(3):
-#    print("wprowadz wartosc:")
-#    b = raw_input()
-#    b = int(b)
-#    podsumowanie +=b
-#print("suma wynikowto:" , podsumowanie)
+zadanie 25
+---------------------------------------------------------------------
+
+a = [17,21,18]
+b = "kolejna zmienna"
+d="AAA"
+
+for c in a:
+    print(c)
+    print(b)
+    print(d)
+    
+ zadanie 25
+-----------------------------------------------------------------------
+
+a=[17,21,18]
+b=["Adrian","Paula"]
+
+for i in a:
+    print(i)
+    for j in b:
+        print(j)
+        
+zadanie 26
+-----------------------------------------------------------------------
+
+podsumowanie = 1
+for a in range(3):
+    print("wprowadz wartosc:")
+    b = raw_input()
+    b = int(b)
+    podsumowanie +=b
+print("suma wynikow to:" , podsumowanie)
+
+zadanie 27
+------------------------------------------------------------------------
 
 #R = [["CA","NV","UT"],["NJ","NY","DE"]]
 #for a in R:
