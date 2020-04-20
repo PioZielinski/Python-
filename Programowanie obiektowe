@@ -12,3 +12,25 @@ class Vector:
 v1 = Vector(2,15)
 v2 = Vector(5,-2)
 print v1 + v2
+
+
+
+zadanie 2
+----------------------------------------------------------------------------------------
+class Critter(object):
+    def __init__(self, name):
+        print("Urodził się nowy zwierzak!")
+        self.name = name
+    def __str__(self):
+        rep = "Obiekt klasy Critter\n"
+        rep += "name: " + self.name + "\n"
+        return rep
+    def talk(self):
+        print("CzeSC! Jestem", self.name, "\n")
+
+crit1 = Critter("Reksio")
+crit1.talk()
+crit2 = Critter("Pucek")
+crit2.talk()
+crit3=Critter("Sonia")
+crit3.talk()
