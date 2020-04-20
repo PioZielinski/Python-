@@ -173,3 +173,65 @@ blu = Parrot("Blu",65464654 )
 # call our instance methods
 print(blu.sing("'Happy'"))
 print(blu.dance())
+
+
+--------------------------------------------------------------------------------------------
+
+zadanie 7
+
+
+class Witold:
+    def __init__(self,zawod, samochod,hobby):
+        self.zawod=zawod
+        self.samochod=samochod
+        self.hobby=hobby
+    def praca(self):
+        print("Moja praca to : " +self.zawod, "moj samochod to : " + self.samochod, "MOje hobby to :  " + self.hobby)
+    def auto(self):
+        print("Moje auto to :  ")
+        
+class Piotr(Witold):
+    def __init__(self,zawod,samochod,hobby,numer_buta):
+        Witold.__init__(self,zawod,samochod,hobby)
+        self.numer_buta=numer_buta
+    def podaj_numer_buta(self):
+        return self.numer_buta
+piotrus=Piotr("spawanie","fiat","programowanie","Mam numer buta 46")
+witold=Witold("radiotelekomunikacja","fiat stillo","pociagi")
+witold.praca()
+
+piotrus.praca()
+print(piotrus.podaj_numer_buta())
+
+---------------------------------------------------------------------------------------------------------------------
+
+zadanie 8
+
+
+class Parrot:
+
+    def fly(self):
+        print("Parrot can fly")
+    
+    def swim(self):
+        print("Parrot can't swim")
+
+class Penguin:
+
+    def fly(self):
+        print("Penguin can't fly")
+    
+    def swim(self):
+        print("Penguin can swim")
+
+# common interface
+def flying_test(bird):
+    bird.fly()
+
+#instantiate objects
+blu = Parrot()
+peggy = Penguin()
+
+# passing the object
+flying_test(blu)
+flying_test(peggy)
