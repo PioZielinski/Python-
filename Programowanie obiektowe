@@ -34,3 +34,115 @@ crit2 = Critter("Pucek")
 crit2.talk()
 crit3=Critter("Sonia")
 crit3.talk()
+
+-----------------------------------------------------------------------------------------------
+zadanie 3
+
+class Osoba:
+    def __init__(self, imie, nazwisko, wiek):
+        self.imie = imie
+        self.nazwisko = nazwisko
+        self.wiek = wiek
+        
+    def przedstaw_sie(self):
+            print("Jestem  " + self.imie, "zwa mnie :  " + self.nazwisko)
+    def urodziny(self):
+            print("Mój wiekm to :  " +self.wiek)
+    
+def main():
+    # tworzymy dwa obiekty klasy Osoba
+    Jan = Osoba("Jan", "Nowak", 48)
+    Adam = Osoba("Adam", "Mickiewicz", 220)
+    kleofas = Osoba("kleofas",'ziemikiewicz',33)
+    ziemowit =Osoba("ziemowit","Urban",29)
+    artur = Osoba("artur","Kurnicki", 37,)
+    Sarina = Osoba("Sara","Janczak",13,)
+    Irek=Osoba("irek","Janczak", "15",)
+    Pikusnik=Osoba("Piotrusiek","zielinski","79",)
+    
+#     wywołujemy metodę przedstaw_sie() na każdym z nich
+    Jan.przedstaw_sie()
+    Adam.przedstaw_sie()
+    kleofas.przedstaw_sie()
+    ziemowit.przedstaw_sie()
+    artur.przedstaw_sie()
+    Sarina.przedstaw_sie()
+    Irek.przedstaw_sie()
+    Irek.przedstaw_sie()
+    
+
+    
+    # odwołujemy się do pól, modyfikujemy je
+    Jan.imie = "Stanislaw"
+    Jan.nazwisko = "Witkiewicz"
+    Jan.wiek = 133
+    
+    Sarina.nazwisko ="Nowak"
+    
+    Jan.przedstaw_sie()
+    Sarina.przedstaw_sie()
+    
+if __name__ == "__main__":
+    main()
+    
+    
+    
+
+-----------------------------------------------------------------------------------------------------
+zadanie 4
+
+
+class Osoba:
+    def __init__(self,imie,nazwisko):
+        self.imie = imie
+        self.nazwisko= nazwisko
+        
+    def przedstaw_sie(self):
+        return "Nazywam sie " + self.imie +" " +self.nazwisko
+    
+    
+class Student(Osoba):
+    def __init__(self,imie,nazwisko,numer_indeksu):
+        Osoba.__init__(self,imie,nazwisko)
+        self.indeks = numer_indeksu
+        
+    def podaj_numer_indeksu(self):
+        return self.indeks
+        
+student = Student("Tomasz","kot","Numer indeksu :1345678")
+print(student.przedstaw_sie())
+print(student.podaj_numer_indeksu())
+
+-----------------------------------------------------------------------------------------------
+
+zadanie 5
+
+class pies:
+    
+    gatunek = ('pies domowy') 
+
+    def __init__(self,rasa,imie,wiek):
+                print("wewnatrz metody init")
+                self.rasa = rasa
+                self.imie = imie
+                self.wiek = wiek
+    def szczekaj(self):
+                print("hau hau!!")
+                
+    def zaprezentuj_psa(self):
+                print("rasa to " +self.rasa)
+                print("imie to "+ self.imie)
+                print("wiek psa to "+ str(self.wiek))
+reksio = pies('kundelek','Reksio',3)
+
+print(reksio.wiek)
+reksio.wiek=34
+reksio.rasa="owczarek_niemiecki"
+print(reksio.wiek)
+print(reksio.imie)
+print(reksio.rasa)
+reksio.gatunek="ptak"
+
+print(reksio.gatunek)
+print(reksio.szczekaj())
+print(reksio.zaprezentuj_psa())
