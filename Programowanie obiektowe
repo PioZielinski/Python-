@@ -235,3 +235,37 @@ peggy = Penguin()
 # passing the object
 flying_test(blu)
 flying_test(peggy)
+
+---------------------------------------------------------------------------------------------------------------------
+
+zadanie 9
+
+class dziadek:
+    def __init__(self, wiek, szkola):
+        self.wiek=wiek
+        self.szkola=szkola
+    def powiedz_o_sobie(self):
+        return self.wiek+self.szkola
+class syn(dziadek):
+    def __init__(self,wiek,szkola,film):
+        dziadek.__init__(self,wiek,szkola)
+        self.film=film
+    def przedstaw_sie(self):
+        print("Mam tyle lat :" +self.wiek, "Skonczylem : " + self.szkola, "Moj ulubiony film to :" +self.film)
+class wnok(dziadek,syn):     
+    def __init__ (self,wiek,szkola,film,gry):
+        syn.__init__(self,wiek,szkola,film)
+        self.gry=gry
+    def mow (self):
+        print("moja najlepsza gra to :  " + self.gry, "a moj najlepszy film to : " +self.film)
+
+
+
+
+
+tata = dziadek("66 ","Technikum Lacznosci")
+print(tata.powiedz_o_sobie())
+Piotr=syn("33","PP","Private Ryan")
+Piotr.przedstaw_sie()
+Wojtek=wnok("8","podstawowa","Piraci z karaibow","Boss")
+Wojtek.mow()
