@@ -272,7 +272,7 @@ Wojtek.mow()
 
 
 ------------------------------------------------------------------------------------------------------------------
-zadanie 8
+zadanie 10
 
 class Player(object):
     def blast(self,enemy):
@@ -290,7 +290,7 @@ input("\n\n Aby zakonczyc programn nacisnij Enter.")
 
 
 -----------------------------------------------------------------------------------------------------------
-zadanie 9
+zadanie 11
 
 class Player (object):
     def __init__(self,name,score=0):
