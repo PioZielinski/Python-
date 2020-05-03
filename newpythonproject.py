@@ -488,7 +488,20 @@ print("uzytkownik wybral", lista)
 for a in range(0,10,1):
     print(a*"*")
     
+------------------------------------------------------------------------------------------------
 
+zadanie 30
+
+chest = ["zloto","klejnoty"]
+print("znajdujesz skrzynie, ktora zawiera  :")
+print(chest)
+print("Dodajemy zawartosc skrzyni do naszego inwentarza")
+inventory = ["kusza","miecz","zbroja","buty","rekawice"]
+inventory[0] = "kula na lancuchu"
+inventory[1] = "kozik"
+inventory += chest
+inventory[2:3] = "tarcza"
+print(inventory)
 
 
     
