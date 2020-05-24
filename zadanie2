@@ -22,3 +22,20 @@ for i in range(122, 96, -1):
         x = 0
     print("\n", end=" ")
     print(litera.upper(), "=>", litera, end=" ")
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+zadanie 2
+
+wiekpython = 1984
+
+wiek = int(input("podaj twoj rok urodzenia  ?"))
+imie = input("podaj swoje imie :  ?")
+
+print("Witaj " + imie)
+
+if wiekpython > wiek:
+    print("Python jest od ciebie starszy :)")
+else:
+    print("Jestes mlodszy")
